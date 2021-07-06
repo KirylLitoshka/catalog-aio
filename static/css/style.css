@@ -63,8 +63,10 @@ ul {
 }
 
 .phone-area {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.4s ease-in-out;
     position: absolute;
-    overflow: hidden;
     top: 35px;
     left: 10px;
     padding: 0 20px;
@@ -72,9 +74,14 @@ ul {
     border: 1px solid gray;
     border-radius: 10px;
     font-size: 16px;
-    display: none;
-    opacity: 0;
-    transition: all 0.5s ease-in;
+}
+
+.phone-area_active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .phone-area_numbers li,
@@ -91,13 +98,6 @@ ul {
     padding: 15px 0;
     border-bottom: 1px solid #9e9e9e;
     border-top: 1px solid #9e9e9e;
-}
-
-.active {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    opacity: 1;
 }
 
 .header {
