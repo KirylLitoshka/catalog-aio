@@ -7,9 +7,9 @@ name = "pypi"
 aiohttp = "*"
 pyyaml = "*"
 aiohttp-jinja2 = "*"
-aiohttp-debugtoolbar = "*"
 
 [dev-packages]
+aiohttp-debugtoolbar = "*"
 
 [requires]
 python_version = "3.9"
